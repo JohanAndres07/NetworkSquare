@@ -1,0 +1,425 @@
+/*my-socnet-style.css */
+/* Own stylesheet for SocNet */
+
+body {
+background-color: #5dc2d6;
+  }
+#container {
+  background-color: #fff;
+  margin:0 auto ;
+  margin-top: 200px;
+  padding: 10px;
+  font-family: Helvetica, Geneva, Arial, sans-serif;
+  display: block;
+  border: 2px solid   #fff ;
+  width: 500px;
+  height: 600px;
+  border-radius: 30px; /* dark grey */
+  box-shadow: 3px 3px 30px; 
+}
+a:link{
+  font-size: 128%;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline ;
+  text-decoration-color: #5dc2d6;
+}
+h1 {
+  color:#007394; 
+	margin: 20px;
+	font-size: 200%;  
+  text-align: center;
+}
+a{
+
+font-family: 'Staatliches', cursive;
+  display: inline-block;
+  color : #999;
+  padding: 5px;
+}
+#caja{
+  text-align: center;
+}
+form {
+  text-align: left;
+  font-size: 120%;
+
+}
+label {
+  font-size: 110%;
+	padding: 5px;
+	text-align: left; 
+	margin: 5px; 
+}
+#des {
+  text-align: center;
+}
+#say {
+  margin-left:   50px;
+}
+
+#post {
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #5dc2d6;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+#post::placeholder {
+  color: white;
+  font-size: 20px;
+}
+#post_sub{
+  position: absolute;
+  margin-top: 8px;
+margin-left: 280px;
+
+}
+#post_submit{
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #007394;  
+  border-radius: 5px;
+  color: #fff;
+
+}
+#post_submit:hover {
+  cursor: pointer;
+}
+#email{
+  padding: 20px;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+}
+#passwd{
+  padding: 20px;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+}
+#login_submit{
+  border: 2px solid   #fff ;
+  background-color: #007394;
+  border-radius: 30px;
+  color: #fff;
+}
+#login_submit:hover {
+  cursor: pointer;
+}
+/* sing up */
+#nickname:hover{
+  box-shadow: 3px 3px 30px; 
+  }
+
+#emailsignup:hover{
+  box-shadow: 3px 3px 30px; 
+}
+#passwdsignup:hover{
+  box-shadow: 3px 3px 30px; 
+}
+#confirm:hover{
+  box-shadow: 3px 3px 30px; 
+
+}
+#confirm{
+  padding: 20px 0px 20px 40px ;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+}
+#nickname{
+  padding: 20px 0px 20px 40px ;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+}
+#emailsignup{
+padding: 20px 0px 20px 40px ;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+border-radius: 30px;
+}
+#passwdsignup{
+  padding: 20px 0px 20px 40px ;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+border-radius: 30px;
+}
+#repeico{
+  color: #5EB6D3;
+  position: relative;
+  top: 2px;
+  margin-left: -360px;
+}
+#emailico{
+  color: #5EB6D3;
+  position: relative;
+  top: 2px;
+  margin-left: -360px;
+}
+#passico{
+  color: #5EB6D3; 
+  position: relative;
+  top: 2px;
+  margin-left: -360px;
+}
+#userico{
+  color: #5EB6D3;
+  position: relative;
+  top: 2px;
+  margin-left: -360px;
+}
+
+#signup_submit{
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #007394;
+  border-radius: 30px;
+  color: #fff;
+}
+#signup_submit:hover{
+  cursor: pointer;
+}
+
+/*termina sing up */
+
+#select_friend{
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #007394;
+  border-radius: 5px;
+  color: #fff;
+}
+#select_friend:hover {
+  cursor: pointer;
+}
+#imglogin{
+  margin-top: 20px;
+  margin-left: 180px;
+  height: 130px;
+  width: 130px;
+}
+#remember{
+  color: #007399;
+  font-size: 15px;
+}
+/* friends*/
+#nicknamefr{
+  padding: 20px  ;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+}
+#confirmfr{
+  padding: 20px ;
+  border: 2px solid   #fff ;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+}
+#fr{
+  margin-left: 20px;
+  margin-top: -20;
+  position: absolute;
+  color:#007394;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+
+}
+#friendfr{
+  display:none;
+  position: absolute;
+  margin-left: 460px;
+  margin-top: -200px;
+  height: 325px;
+  background-color: #fff;
+  border-left: solid #aaa;
+  border-radius: 0 30px 30px 0;
+  animation: animation 3s infinite ;
+}
+@keyframes animation {
+  0%{  border-color: #0080aa; }
+  100%{border-color: #aaa;transform: rotate(-360);}
+
+  
+}
+#friends{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10px;
+  height: 260px;
+  border: none;
+  width: 200px;
+  background-color: #fff;
+}
+#frico{
+  position: absolute;
+  margin-top: -53px;
+  margin-left: 100px;
+  color: #aaa;
+}
+#frico:hover{
+  color: #007394;
+  cursor: pointer;
+}
+#accept_submit{
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #007394;
+  border-radius: 30px;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#accept_submit:hover{
+  cursor: pointer;
+}
+#labl{
+  color: #007394;
+}
+#ok_friend{
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #007394;  
+  border-radius: 5px;
+  color: #fff;
+  width: 60px;
+  margin-left: 10px;
+}
+#cancel_friend{
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #007394;  
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 20px;
+}
+#cancel_friend:hover{
+  cursor: pointer;
+}
+#ok_friend:hover{
+  cursor: pointer;
+}
+#hi{
+  padding-left: 30px;
+  height: 260px;
+  width: 270px;
+
+}
+/*editar mensajes */
+#chat{
+  display: none;
+  text-align: justify;
+  margin-top: -530px;
+  margin-left: 510px;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border-left: solid #aaa;
+  border-radius: 0 30px 30px 0;
+  overflow: scroll;
+}
+#messages{
+  padding: 10px;
+  margin-left: 20px;
+  height: 100px;
+  width: 400px;
+margin-top: 20px;
+}
+#friendss{
+  height: 100px;
+  width: 400px;
+}
+#sayi{
+  margin-left: 10px;
+}
+#cajsup{
+
+  overflow: scroll;
+  height: 480px;
+  width: 500px;
+}
+#div_messages{
+padding: 10px 0px 0px 0px;
+
+
+}
+
+#error{
+  background-color: #fff;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-left: 900px;
+}
+#next{
+  padding: 10px;
+  border: 2px solid   #fff ;
+  background-color: #007394;
+  border-radius: 30px;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+#next:hover{
+  cursor: pointer;
+}
+
+/*animation*/
+
+#sq {
+margin-top: 20px;
+margin-left: 160px;
+margin-bottom: 20px;
+  width: 170px;
+  height: 170px;
+   /* box-shadow: 16px 14px 10px #0000008c;  */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sq::before{
+  content: "";
+  background-image: conic-gradient(
+      #979797 20deg,
+      transparent 120deg
+  );
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+#sq::after{
+  content: "Square";
+  width: 150px;
+  height: 150px;
+  background:#5dc2d6;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: larger;
+  letter-spacing: 5px;
+  box-shadow: inset 20px 20px 20px #5dc2d6;
+}
+@keyframes rotate {
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(-360deg);
+  }
+}

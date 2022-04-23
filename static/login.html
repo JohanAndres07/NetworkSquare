@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,500&family=Staatliches&display=swap');
+        </style>
+        <link href="static/css/my-socnet-style.css" rel="stylesheet" type="text/css"/>
+        <title>
+            Log In 
+        </title>
+        <script src="static/js/login.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id ="caja">
+                 <a href="/">
+                Square
+            </a>
+
+            <a href="signup">
+                Sign Up
+            </a>
+        
+
+            </div>
+            <img id = "imglogin" src="static\icons\login.png"/>
+                <h1>
+                Log In
+            </h1>
+
+        <div id = "say">
+            <form action="login" method="post" name="login" onsubmit="return validateLoginDHTML()">
+                <ul class="errorMessages" style="display:none" id="errores_login"></ul>
+
+                <label for="email">
+
+                 </label>
+				 <div class="inputs">
+                    <input id="email" name="email" placeholder="Email"  size="47" type="text" value=""/>
+                </div>
+                <label for="passwd">
+
+                 </label>
+				 <div class="inputs">
+                    <input id="passwd" name="passwd" placeholder="Password" size="47" type="password" value=""/>
+                </div>
+                <label id = "remember">
+                        <input id="remember_me" name="remember_me"  type="checkbox" value="y"/>
+                        Remember Me
+                </label>
+                 <div id = "enviar" class="inputs">
+                    <input id="login_submit" name="login_submit" style="width: 390px; height: 50px;"  type="submit" value="Log In"/>
+                </div>
+
+               
+            </form>
+        </div>
+
+        </div>
+    </body>
+</html>
+
+
+
+
+

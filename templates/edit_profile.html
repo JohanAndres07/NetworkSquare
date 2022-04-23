@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link href="static/css/my-socnet-style.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,500&family=Staatliches&display=swap');
+        </style>
+        <link rel="stylesheet" type="text/css" href="static\icons\css/all.min.css">
+    <title>
+        EDIT PROFILE
+    </title>
+    <script src="static/js/profile.js"></script>
+</head>
+
+<body>
+<div id="container">
+    <div id = "caja">
+        <a href="/">
+            Square
+    </a>
+
+    <a href="/home">
+        Chat
+    </a>
+
+    <a href="logout" >
+        Log Out ({{ nickname }})
+    </a>
+
+    <h1 style="text-transform: uppercase;" >
+        {{ nickname }}
+    </h1>
+    <i id = "frico" style="font-size: 25px;" class="fa-solid fa-user-group"       ></i>
+    </div>
+
+    <div>
+        <!--
+            Dependiendo del momento del curso en el que nos encontremos, la definición del formulario variará
+
+            - Después de explicar la validación de formularios con JS será:
+            <form action="/profile" method="post" name="profile" onsubmit="return validateProfile(this)">
+
+            - Después de explicar DHTML y que sepáis cómo variar dinámicamente el contenido del documento será:
+            <form action="/profile" method="post" name="profile" onsubmit="return validateProfileDHTML(this)">
+        -->
+        <div id ="say">
+            <form action="/profile" method="post" name="profile" onsubmit="returnvalidateProfileDHTML(this)">
+            <ul class="errorMessages" style="display:none" id="errores_profile"></ul>
+
+            <label for="nickname" id="labl">
+                <i  class="fa-solid fa-user"></i> Nickname
+            </label>
+            <div class="inputs">
+                <input id="nicknamefr" maxlength="64" name="nickname" placeholder="Nickname" size="45" type="text"
+                    value="{{ nickname }}"/>
+            </div>
+            <label for="email" id="labl">
+                <i  class="fa-solid fa-envelope"></i> Email
+            </label>
+            <div class="inputs">
+                <input id="email" name="email" placeholder="Email" size="45" type="text" value="{{ email }}" readonly/>
+            </div>
+        <div class="inputs" id = "friendfr">
+                <label for="friends" id ="fr">
+                Friends
+                
+            </label>
+                <select id="friends"  name="friends" size="5" >
+                    {% for option in all_users %}
+                    <option  value="{{ option }} " {% if option in friends %} selected {% endif %}>{{ option }} </option>
+                    {% endfor %}
+                </select>
+
+            </div>
+
+            <label for="passwd" id="labl">
+                <i class="fa-solid fa-key"></i> New Password
+            </label>
+            <div class="inputs">
+                <input id="passwd" name="passwd" placeholder="Password" size="45" type="password" value="{{ passwd }}"/>
+            </div>
+            <label for="confirm" id="labl">
+                <i class="fa-solid fa-key"></i> Repeat Password
+                <div class="inputs">
+                    <input id="confirmfr" name="confirm" placeholder="Repeat Password" size="45" type="password"
+                        value="{{ passwd }}"/>
+                </div>
+                <div class="inputs">
+                    <input id="accept_submit" name="accept_submit" type="submit" value="Accept"/>
+                </div>
+            </label>
+        </form>
+        </div>
+        <script>
+            function mostrar(){
+                document.getElementById("friendfr").style.display="block";
+            }
+            function ocultar(){
+                document.getElementById("friendfr").style.display="none";
+            }
+            document.getElementById("frico").onclick = function(){
+                mostrar();
+            }
+                document.getElementById("frico").ondblclick = function(){
+                ocultar();
+            }
+        </script>
+    </div>
+</div>
+<div id="divi"></div>
+</body>
+</html>

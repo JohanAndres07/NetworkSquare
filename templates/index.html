@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link href="static/css/my-socnet-style.css" rel="stylesheet" type="text/css"/>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,500&family=Staatliches&display=swap');
+        </style>
+    <title>
+        Square
+    </title>
+</head>
+<body>
+<div id="container">
+    <div id = "caja">
+        <a href="/">
+            Square
+    </a>
+
+    {% if logged %}
+        <a href="home">
+            Chat
+        </a>
+
+        <a href="profile">
+            Profile
+        </a>
+
+        <a href="logout">
+            Log Out ({{ nickname }})
+        </a>
+    {% else %}
+        <a href="login">
+            Log In
+        </a>
+
+        <a href="signup">
+            Sign Up
+        </a>
+    {% endif %}
+    <h1>
+        Hi, Welcome to the SQUARE
+    </h1>
+    <div id="cuerpo">
+        <div id="sq"></div>
+    </div>
+        <p>Choose <b>Sign Up</b> if you are a new user</p>
+        <p>Choose <b>Login</b> if you are user of Square</p>
+        <p>Choose <b>Home</b> to start to write Posts</p>
+    </div >
+    
+</div>
+</div>
+</body>
+</html>

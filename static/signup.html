@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link href="static/css/my-socnet-style.css" rel="stylesheet" type="text/css"/>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,500&family=Staatliches&display=swap');
+        </style>
+       <link rel="stylesheet" type="text/css" href="static\icons\css/all.min.css">
+        <title>
+            Sign Up 
+        </title>
+        <script src="static/js/profile.js"></script> 
+    </head>
+    <body>
+        <div id="container">
+            <div id = "caja">
+                  <a href="/">
+                    Square
+            </a>
+
+            <a href="login">
+                Log In
+            </a>
+            <h1>
+                Sign Up
+            </h1>
+
+            </div>
+
+           <div id="say">
+               <form action="signup" method="post" name="signup" onsubmit="return validateProfile(this)">
+                <ul class="errorMessages" style="display:none" id="errores_profile"></ul>
+
+                <label for="nickname">
+                   
+                </label>
+				<div class="inputs">
+                    <input id="nickname" maxlength="64" name="nickname" placeholder="Nickname" size="45" type="text" value=""/>
+                    <i id = "userico" class="fa-solid fa-user"></i>
+                </div>
+                 <label for="email">
+                      
+                </label>
+				<div class="inputs">
+                    <input id="emailsignup" name="email" placeholder="Email" size="45" type="text" value=""/>
+                    <i id = "emailico" class="fa-solid fa-envelope"></i>
+                </div>
+                <label for="passwd">
+                    
+                </label>
+				<div class="inputs">
+                    <input id="passwdsignup" name="passwd" placeholder="Password" size="45" type="password" value=""/>
+                    <i id="passico" class="fa-solid fa-key"></i>
+                </div>
+                <label for="confirm">
+                      
+                </label>
+				<div class="inputs">
+                    <input id="confirm" name="confirm" placeholder="Repeat Password" size="45" type="password" value=""/>
+                    <i id="repeico" class="fa-solid fa-key"></i>
+                </div>
+                <label>
+                    
+                </label>
+                <div class="inputs">
+
+                    <input id="signup_submit" name="signup_submit" style="width: 375px; height: 50px;" type="submit" value="Sign Up"/>
+                </div>
+            </form>
+           </div>
+
+        </div>
+    </body>
+</html>
