@@ -1,5 +1,5 @@
 # -*- coding: iso-8859-15 -*-
-__author__ = 'Alvaro Ortigosa, Roberto Latorre'
+__author__ = 'JOHAN ALARCON'
 
 
 from flask import Flask, request, render_template, session, redirect, url_for, jsonify
